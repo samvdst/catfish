@@ -8,14 +8,7 @@ readme = "README.md"
 repository = "https://github.com/samvdst/catfish"
 documentation = "https://docs.rs/catfish"
 categories = ["command-line-utilities", "filesystem"]
-keywords = [
-  "hash",
-  "cli",
-  "deduplicate",
-  "compare",
-  "directories",
-  "filesystem",
-]
+keywords = ["hash", "cli", "compare", "directories", "filesystem"]
 description = """
 catfish is a CLI tool that compares two directories by hashing all files. It reports which files are
 in the 'right' folder but not in 'left', regardless of how things were moved or renamed. Great for
