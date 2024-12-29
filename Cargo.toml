@@ -1,0 +1,30 @@
+[package]
+name = "catfish"
+version = "0.1.0"
+edition = "2021"
+authors = ["Samuel Van der Stappen <shogun_einst.0i@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/samvdst/catfish"
+documentation = "https://docs.rs/catfish"
+categories = ["command-line-utilities", "filesystem"]
+keywords = [
+  "hash",
+  "cli",
+  "deduplicate",
+  "compare",
+  "directories",
+  "filesystem",
+]
+description = """
+catfish is a CLI tool that compares two directories by hashing all files. It reports which files are
+in the 'right' folder but not in 'left', regardless of how things were moved or renamed. Great for
+making sure your 'left' folder has all the files from the 'right' one.
+"""
+
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
+rayon = "1.10.0"
+sha2 = "0.10.8"
+walkdir = "2.5.0"
+anyhow = "1"
