@@ -17,9 +17,6 @@ struct Args {
     left: PathBuf,
     /// The "right" folder
     right: PathBuf,
-    /// Print progress as files are hashed
-    #[arg(short, long)]
-    verbose: bool,
     /// Only report the first file per hash in `right`, ignore duplicates
     #[arg(short = 'i', long = "ignore-duplicates")]
     ignore_duplicates: bool,
