@@ -1,6 +1,6 @@
 [package]
 name = "catfish"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Samuel Van der Stappen <shogun_einst.0i@icloud.com>"]
 license = "MIT"
